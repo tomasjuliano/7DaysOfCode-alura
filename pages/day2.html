@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#7DaysOfCode | Day 2</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style-day2.css">
 </head>
 <body>
     <header class="header">
@@ -27,12 +28,21 @@
             </ul>
         </nav>
     </header>
-    <main class="main">
-        
+    <main class="main" id="main__day2">
+        <h1 class="main__titulo">DAY 2</h1>
+        <div class="main__day2__container">
+            <p class="main__day2__pregunta" id="p_pregunta1" >¿Cuál es tu nombre?</p>
+            <div class="main__day2__preguntayrespuesta" id="div_preguntayrespuesta">
+                <input class="main__day2__respuesta" type="text" id="input_respuesta">
+                <button class="main__day__container__content__button" onclick="consultarRespuesta()" id="boton_enviar">Enviar</button>
+            </div>
+            <p class="main__day2__pregunta" id="p_pregunta2"></p>
+            <div class="main__day2__botones__respuesta" id="div_botones">
+                <button class="main__day__container__content__button" id="boton_si" onclick="respuestaBotonSi()">Sí</button>
+                <button class="main__day__container__content__button" id="boton_no" onclick="respuestaBotonNo()">No</button>
+            </div>
+        </div>
     </main>
-    <footer class="footer">
-        <p class="footer__text">Creado por Tomás Juliano 🦦</p>
-    </footer>
 </body>
-<script src="scripts/app-day2.js"></script>
+<script src="/js/app-day2.js"></script>
 </html>
