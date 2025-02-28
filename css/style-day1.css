@@ -1,0 +1,125 @@
+#main__day1{
+    width: 100%;
+    height: 80vh;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__day1__container{
+    width: 80%;
+    height: 80%;
+    margin: 0rem 11.5rem 0rem 11.5rem;
+    padding: 1rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.5rem solid yellow;
+}
+
+.main__variables{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.variable__comparacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main__variable{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.25rem solid yellow;
+    border-radius: 0.5rem;
+    cursor: grab;
+}
+
+.main__variable__nombre{
+    color: yellow;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.main__variable__tipo{
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.main__day1__separador{
+    width: 100%;
+    height: auto;
+    border-bottom: 0.5rem dotted yellow;
+}
+
+.main__day1__comparador{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main__day1__dropzones{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main__dropzone{
+    width: 14rem;
+    height: 7rem;
+    padding: 0.50rem;
+    border: 0.25rem solid yellow;
+    border-radius: 0.5rem;
+}
+
+.main__dropzone:has(.dropped){
+    width: fit-content;
+    height: 7rem;
+    .main__variable{
+        width: auto;
+        height: auto;
+    }
+}
+
+.main__day1__text{
+    color: yellow;
+    font-size: 4rem;
+    font-weight: 800;
+    padding: 0.5rem;
+}
+
+#texto_inicial{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#respuesta_comparacion{
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+}
