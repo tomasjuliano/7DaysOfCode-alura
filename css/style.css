@@ -69,6 +69,7 @@ body{
 
 .header__menu__horizontal > li > a:hover{
     text-shadow: 1px 1px 4px yellow;
+    transition: 0.15s;
 }
 
 .header__menu__vertical{
@@ -88,6 +89,7 @@ body{
 
 .header__menu__vertical > li:hover{
     background-color: rgba(255, 255, 0, 0.282);
+    transition: 0.15s;
 }
 /* -------------------------------- MAIN -------------------------------- */
 
@@ -168,7 +170,13 @@ body{
 }
 
 .main__day__container__content__button:hover{
-    box-shadow: 1px 1px 5px #ffff00;
+    box-shadow: 0px 0px 5px yellow;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.main__day__container__content__button:not(:hover){
+    transform: scale(1);
+    transition: 0.5s;
 }
 
 /* -------------------------------- FOOTER -------------------------------- */

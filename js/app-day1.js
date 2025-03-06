@@ -2,6 +2,8 @@
 const variables = document.querySelectorAll(".main__variable");
 const dropZones = document.querySelectorAll(".main__dropzone");
 const respuesta = document.getElementById("respuesta_comparacion");
+const draggableElement = document.querySelector(".draggable");
+
 
 // Hacer que los contenedores sean arrastrables
 variables.forEach(variable => {
@@ -57,14 +59,10 @@ dropZones.forEach(zone => {
     });
 });
 
-document.addEventListener("dragstart", () => {
-    document.body.style.cursor = "grabbing";
+// Evitar que la cruz aparezca en cualquier parte de la página
+document.addEventListener("dragover", (event) => {
+    event.preventDefault(); 
 });
-
-document.addEventListener("dragend", () => {
-    document.body.style.cursor = "default"; // O vuelve al valor original
-});
-
 
 // Función para verificar la comparación
 function verificarComparacion() {

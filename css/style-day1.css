@@ -49,6 +49,10 @@
     cursor: grab;
 }
 
+.dragging {
+    cursor: grabbing !important; /* Cursor mientras se arrastra */
+  }
+
 .main__variable__nombre{
     color: yellow;
     font-size: 2rem;

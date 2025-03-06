@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#7DaysOfCode | Day 3</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style-day3.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="/img/7daysofcode-logo.svg" alt="Logo 7 Days of code.">
+        <nav class="header__menu">
+            <ul class="header__menu__horizontal">
+                <li><a href="/index.html">HOME</a></li>
+                <li>
+                    <a href="#">DAYS</a>
+                    <ul class="header__menu__vertical">
+                        <li><a href="/pages/day1.html">#Day1</a></li>
+                        <li><a href="/pages/day2.html">#Day2</a></li>
+                        <li><a href="/pages/day3.html">#Day3</a></li>
+                        <li><a href="/pages/day4.html">#Day4</a></li>
+                        <li><a href="/pages/day5.html">#Day5</a></li>
+                        <li><a href="/pages/day6.html">#Day6</a></li>
+                        <li><a href="/pages/day7.html">#Day7</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main" id="main__day3">
+        <h1 class="main__titulo">DAY 3</h1>
+        <div class="main__day3__container" id="main_container">
+            <p class="main__day3__intro" id="texto_intro">¡Bienvenido! Aquí empieza tu fase de especialización como desarrollador. Luego de aprender <span style="color: yellow;">HTML</span>, <span style="color: yellow;">CSS</span> y <span style="color: yellow;">JavaScript</span> en la fase uno del curso de Alura Latam debes elegir como seguir tu camino.</p>
+            <p class="main__day3__texto" id="texto_inicial"></p>
+            <button class="main__button__continuar" id="boton" onclick="iniciarJuego();">Comenzar</button>
+            <div class="main__div__container" id="div_principal">
+                <div class="divs_especialidad">
+                    <a id="boton_especialidades" onclick="escogeFrontEnd();"><p class="main__day3__texto" id="titulos_divs">Front-End</a></button>
+                    <ul class="main__day3__lista-opciones" id="lista_front">
+                        <li><a href="https://react.dev/">React.js</a><p class="main__day3__texto" id="desc_tecnologias">Es una biblioteca de JavaScript desarrollada por Facebook para construir interfaces de usuario interactivas y componentes reutilizables.</p></li>
+                        <li><a href="https://vuejs.org/">Vue.js</a><p class="main__day3__texto" id="desc_tecnologias">Es un Framework progresivo de JavaScript que facilita la creación de interfaces dinámicas y es conocido por su facilidad de aprendizaje.</p></li>
+                    </ul>
+                </div>
+                <div class="divs_especialidad">
+                    <a id="boton_especialidades" onclick="escogeBackEnd();"><p class="main__day3__texto" id="titulos_divs">Back-End</p></a>
+                    <ul class="main__day3__lista-opciones" id="lista_front">
+                        <li><a href="https://dotnet.microsoft.com/es-es/languages/csharp">C#</a><p class="main__day3__texto" id="desc_tecnologias">Es un lenguaje de programación multipropósito desarrollado por Microsoft.</p></li>
+                        <li><a href="https://www.java.com/es/">Java</a><p class="main__day3__texto" id="desc_tecnologias">Es un lenguaje de programación de propósito general, concurrente y orientado a objetos.</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main__div__container" id="eleccion">
+                <div class="elecciones" id="eleccion_front">
+                    <div class="img_and_text" id="react" onclick="escogeTecnologia('React.js', 'Front-End');">
+                        <img src="/img/React.svg" alt="Logo React" class="main__day3__img">
+                        <p class="texto__del__logo" id="texto_react">React.js</p>
+                    </div>
+                    <div class="img_and_text" id="vue" onclick="escogeTecnologia('Vue.js', 'Front-End');">
+                        <img src="/img/Vue.js.svg" alt="Logo Vue.js" class="main__day3__img">
+                        <p class="texto__del__logo" id="texto_vue">Vue.js</p>
+                    </div>
+                </div>
+                <div class="elecciones" id="eleccion_back">
+                    <div class="img_and_text" id="csharp" onclick="escogeTecnologia('C#', 'Back-End');">
+                        <img src="/img/Csharp.svg" alt="Logo C#" class="main__day3__img">
+                        <p class="texto__del__logo" id="texto_csharp">C#</p>
+                    </div>
+                    <div class="img_and_text" id="java" onclick="escogeTecnologia('Java', 'Back-End');">
+                        <img src="/img/Java.svg" alt="Logo Java" class="main__day3__img">
+                        <p class="texto__del__logo" id="texto_java">Java</p>
+                    </div>
+                </div>
+            </div>
+            <div id="user_profile">
+                <img src="/img/user-logo.svg" alt="Logo de usuario" class="main__day3__img" id="user_logo">
+                <p class="main__day3__texto" id="user_name">Usuario</p>
+                <div class="main__day3__container" id="contenedor_tecnologias">
+                    <p class="main__day3__texto" id="texto_tecnologias-estudiadas">Tecnologias estudiadas</p>
+                    <div class="tecnologias_imagenes" id="tecnologias">
+                        <img src="/img/HTML5.svg" alt="Logo HTML5" class="main__day3__img">
+                        <img src="/img/CSS3.svg" alt="Logo CSS3" class="main__day3__img">
+                        <img src="/img/JavaScript.svg" alt="Logo JavaScript" class="main__day3__img">
+                        <img src="/img/React.svg" alt="Logo React" class="main__day3__img" id="logo_react" style="display: none;">
+                        <img src="/img/Vue.js.svg" alt="Logo Vue.js" class="main__day3__img" id="logo_vue" style="display: none;">  
+                        <img src="/img/AngularJS.svg" alt="Logo AngularJS" class="main__day3__img" id="logo_angular" style="display: none;">
+                        <img src="/img/Svelte.svg" alt="Logo Svelte" class="main__day3__img" id="logo_svelte" style="display: none;">
+                        <img src="/img/TailwindCSS.svg" alt="Logo TailwindCSS" class="main__day3__img" id="logo_tailwind" style="display: none;">
+                        <img src="/img/Csharp.svg" alt="Logo C#" class="main__day3__img" id="logo_csharp" style="display: none;">
+                        <img src="/img/Java.svg" alt="Logo Java" class="main__day3__img" id="logo_java" style="display: none;">
+                        <img src="/img/Node.js.svg" alt="Logo Node.js" class="main__day3__img" id="logo_node" style="display: none;">
+                        <img src="/img/MySQL.svg" alt="Logo MySQL" class="main__day3__img" id="logo_mysql" style="display: none;">
+                        <img src="/img/Spring.svg" alt="Logo Spring Boot" class="main__day3__img" id="logo_spring" style="display: none;">
+                    </div>
+                </div>
+                <button class="main__button__continuar" id="boton_siguiente" onclick="avanceAprendizaje();">Siguiente</button>
+            </div>
+            <div class="contenedor__botones__eleccion" id="botones_eleccion">
+                <button class="main__button__continuar" onclick="ultimaEleccion('Front-End');">Front-End</button>
+                <button class="main__button__continuar" onclick="ultimaEleccion('Back-End');">Back-End</button>
+            </div>
+            <div class="contenedor_tecnologias_especializacion" id="contenedor_tecnologias_front">
+                <ul class="main__day3__lista-opciones" id="lista_front_extendida">
+                    <li>
+                        <div class="img_and_text" id="react" onclick="escogeTecnologia('React.js', 'Front-End');">
+                            <img src="/img/React.svg" alt="Logo React" class="main__day3__img">
+                            <p class="texto__del__logo" id="texto_react">React.js</p>
+                            <p class="main__day3__texto" id="desc_tecnologias">Es una biblioteca de JavaScript desarrollada por Facebook para construir interfaces de usuario interactivas y componentes reutilizables.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_and_text" id="vue" onclick="escogeTecnologia('Vue.js', 'Front-End');">
+                            <img src="/img/Vue.js.svg" alt="Logo Vue.js" class="main__day3__img">
+                            <p class="texto__del__logo" id="texto_vue">Vue.js</p>
+                            <p class="main__day3__texto" id="desc_tecnologias">Es un Framework progresivo de JavaScript que facilita la creación de interfaces dinámicas y es conocido por su facilidad de aprendizaje.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_and_text" id="angular" onclick="escogeTecnologia('AngularJS', 'Front-End');">
+                            <img src="/img/AngularJS.svg" alt="Logo AngularJS" class="main__day3__img">
+                            <p class="texto__del__logo" id="texto_angular">AngularJS</p>
+                            <p class="main__day3__texto" id="desc_tecnologias">Es un Framework desarrollado por Google que permite construir aplicaciones web de una sola página con un enfoque basado en componentes y TypeScript.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_and_text" id="svelte" onclick="escogeTecnologia('Svelte', 'Front-End');">
+                            <img src="/img/Svelte.svg" alt="Logo Svelte" class="main__day3__img">
+                            <p class="texto__del__logo" id="texto_svelte">Svelte</p>
+                            <p class="main__day3__texto" id="desc_tecnologias">Es un Framework que compila los componentes en JavaScript puro, eliminando la necesidad de un runtime y mejorando el rendimiento.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_and_text" id="tailwind" onclick="escogeTecnologia('TailwindCSS', 'Front-End');">
+                            <img src="/img/TailwindCSS.svg" alt="Logo TailwindCSS" class="main__day3__img">
+                            <p class="texto__del__logo" id="texto_tailwind">TailwindCSS</p>
+                            <p class="main__day3__texto" id="desc_tecnologias">Es un Framework de CSS basado en clases de utilidad que permite diseñar interfaces rápidamente sin necesidad de escribir CSS personalizado.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="contenedor_tecnologias_especializacion" id="contenedor_tecnologias_back">
+                <ul class="main__day3__lista-opciones" id="lista_back_extendida">
+                    <li>
+                        <div class="img_and_text" id="csharp" onclick="escogeTecnologia('C#', 'Back-End');">
+                            <img src="/img/Csharp.svg" alt="Logo C#" class="main__day3__img">
+                            <p class="texto__del__logo" id="texto_csharp">C#</p>
+                            <p class="main__day3__texto" id="desc_tecnologias">Es un lenguaje de programación multipropósito desarrollado por Microsoft.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_and_text" id="java" onclick="escogeTecnologia('Java', 'Back-End');">
+                            <img src="/img/Java.svg" alt="Logo Java" class="main__day3__img">
+                            <p class="texto__del__logo" id="texto_java">Java</p>
+                            <p class="main__day3__texto" id="desc_tecnologias">Es un lenguaje de programación de propósito general, concurrente y orientado a objetos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_and_text" id="node" onclick="escogeTecnologia('Node.js', 'Back-End');">
+                            <img src="/img/Node.js.svg" alt="Logo Node.js" class="main__day3__img" id="logo_node">
+                            <p class="texto__del__logo" id="texto_vue">Node.js</p>
+                            <p class="main__day3__texto" id="desc_tecnologias">Es un Entorno de ejecución de JavaScript basado en el motor V8 de Chrome, ideal para construir servidores rápidos y escalables.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_and_text" id="mysql" onclick="escogeTecnologia('MySQL', 'Back-End');">
+                            <img src="/img/MySQL.svg" alt="Logo MySQL" class="main__day3__img" id="logo_mysql">
+                            <p class="texto__del__logo" id="texto_mysql">MySQL</p>
+                            <p class="main__day3__texto" id="desc_tecnologias">Es un sistema de gestión de bases de datos relacional basado en SQL, ampliamente utilizado para almacenar y gestionar datos en aplicaciones web.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_and_text" id="spring" onclick="escogeTecnologia('Spring', 'Back-End');">
+                            <img src="/img/Spring.svg" alt="Logo Spring Boot" class="main__day3__img" id="logo_spring">
+                            <p class="texto__del__logo" id="texto_spring">Spring Boot</p>
+                            <p class="main__day3__texto" id="desc_tecnologias">Es un Framework para Java que facilita el desarrollo de aplicaciones empresariales con configuraciones automáticas.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="contenedor__botones__eleccion" id="botones_finales">
+                <button class="main__button__continuar" id="agregar_tecnologias" onclick="ultimaEleccion('Extra');">Agregar más</button>
+                <button class="main__button__continuar" id="finalizar_carrera" onclick="terminarJuego();">Finalizar estudios</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/js/app-day3.js"></script>
+</html>
