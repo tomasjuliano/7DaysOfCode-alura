@@ -173,6 +173,7 @@ body{
     box-shadow: 0px 0px 5px yellow;
     transform: scale(1.1);
     transition: 0.5s;
+    cursor: pointer;
 }
 .main__day__container__content__button:not(:hover){
     transform: scale(1);

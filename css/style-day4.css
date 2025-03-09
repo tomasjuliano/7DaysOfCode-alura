@@ -1,0 +1,114 @@
+#main__day4{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    padding: 0.5rem 0rem .5rem 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__day4__container{
+    width: 80%;
+    height: 80%;
+    margin: 0rem 11.5rem 0rem 11.5rem;
+    padding: 1%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5rem solid yellow;
+}
+
+.main__day4__texto{
+    display: block;
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#comenzar_juego{
+    width: auto;
+    height: auto;
+    background-color: yellow;
+    color: black;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+#enviar_numero{
+    width: auto;
+    height: auto;
+    background-color: yellow;
+    color: black;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+#reiniciar_juego{
+    width: auto;
+    height: auto;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button_disabled{
+    background-color: #242424;
+    color: yellow;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    pointer-events: none;
+}
+
+.main__day4__contenedor-juego{
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main__day4__contenedor__botones{
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#casilla_intento{
+    box-shadow: inset #abacaf 0 0 0 2px;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    appearance: none;
+    width: 25%;
+    position: relative;
+    border-radius: 3px;
+    padding: 9px 12px;
+    line-height: 1.4;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    height: 2.5rem;
+    transition: all .2s ease;
+}
+#casilla_intento:hover{
+    box-shadow: 0 0 0 0 #242424 inset, yellow 0 0 0 2px;
+}
+#casilla_intento:focus{
+    background: #242424;
+    outline: 0;
+    box-shadow: 0 0 0 0 #fff inset, yellow 0 0 0 3px;
+}
+#casilla_intento:disabled:hover {
+    cursor: default;
+    background-color: inherit;
+    border-color: inherit;
+    box-shadow: inherit;
+    opacity: 1;
+}

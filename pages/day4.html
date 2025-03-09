@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#7DaysOfCode | Day 4</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style-day4.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="/img/7daysofcode-logo.svg" alt="Logo 7 Days of code.">
+        <nav class="header__menu">
+            <ul class="header__menu__horizontal">
+                <li><a href="/index.html">HOME</a></li>
+                <li>
+                    <a href="#">DAYS</a>
+                    <ul class="header__menu__vertical">
+                        <li><a href="/pages/day1.html">#Day1</a></li>
+                        <li><a href="/pages/day2.html">#Day2</a></li>
+                        <li><a href="/pages/day3.html">#Day3</a></li>
+                        <li><a href="/pages/day4.html">#Day4</a></li>
+                        <li><a href="/pages/day5.html">#Day5</a></li>
+                        <li><a href="/pages/day6.html">#Day6</a></li>
+                        <li><a href="/pages/day7.html">#Day7</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main" id="main__day4">
+        <h1 class="main__titulo">DAY 4</h1>
+        <div class="main__day4__container" id="main_container">
+            <p class="main__day4__texto" id="texto_bienvenida"></p>
+            <button class="main__day__container__content__button" id="comenzar_juego" onclick="comenzarJuego();">Comenzar juego</button>
+            <div class="main__day4__contenedor-juego" id="contenedor_juego">
+                <p class="main__day4__texto" id="numero_intentos"></p>
+                <input type="number" id="casilla_intento" placeholder="Introduce un número" min="0" max="10">
+                <div class="main__day4__contenedor__botones">
+                    <button class="main__day__container__content__button" id="enviar_numero" onclick="adivinarNumero();">Enviar</button>
+                    <button class="main__day__container__content__button button_disabled" id="reiniciar_juego" onclick="reiniciarJuego();">Reiniciar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="/js/app-day4.js"></script>
+</html>
