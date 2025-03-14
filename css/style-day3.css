@@ -30,6 +30,7 @@
     color: white;
     padding: 0.5rem;
     text-align: center;
+    cursor: default;
 }
 
 .main__day3__texto{
@@ -38,6 +39,7 @@
     color: white;
     padding: 0.5rem;
     text-align: center;
+    cursor: default;
 }
 
 .main__button__continuar{

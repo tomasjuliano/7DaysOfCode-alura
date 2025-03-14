@@ -27,6 +27,7 @@
     color: white;
     padding: 0.5rem;
     text-align: center;
+    cursor: default;
 }
 
 #comenzar_juego{
@@ -79,36 +80,4 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-}
-
-#casilla_intento{
-    box-shadow: inset #abacaf 0 0 0 2px;
-    border: 0;
-    background: rgba(0, 0, 0, 0);
-    appearance: none;
-    width: 25%;
-    position: relative;
-    border-radius: 3px;
-    padding: 9px 12px;
-    line-height: 1.4;
-    color: white;
-    font-size: 2rem;
-    font-weight: 400;
-    height: 2.5rem;
-    transition: all .2s ease;
-}
-#casilla_intento:hover{
-    box-shadow: 0 0 0 0 #242424 inset, yellow 0 0 0 2px;
-}
-#casilla_intento:focus{
-    background: #242424;
-    outline: 0;
-    box-shadow: 0 0 0 0 #fff inset, yellow 0 0 0 3px;
-}
-#casilla_intento:disabled:hover {
-    cursor: default;
-    background-color: inherit;
-    border-color: inherit;
-    box-shadow: inherit;
-    opacity: 1;
 }

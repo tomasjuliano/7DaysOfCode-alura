@@ -12,6 +12,7 @@
     width: 80%;
     height: 80%;
     margin: 0rem 11.5rem 0rem 11.5rem;
+    padding: 1%;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -34,6 +35,7 @@
     color: yellow;
     font-size: 3rem;
     padding: 0.5rem;
+    cursor: default;
 }
 
 .main__day2__respuesta{

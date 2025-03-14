@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#7DaysOfCode | Day 5</title>
+    <link rel="shortcut icon" href="/img/favicon-7daysofcode.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style-day5.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="/img/7daysofcode-logo.svg" alt="Logo 7 Days of code.">
+        <nav class="header__menu">
+            <ul class="header__menu__horizontal">
+                <li><a href="/index.html">HOME</a></li>
+                <li>
+                    <a href="#">DAYS</a>
+                    <ul class="header__menu__vertical">
+                        <li><a href="/pages/day1.html">#Day1</a></li>
+                        <li><a href="/pages/day2.html">#Day2</a></li>
+                        <li><a href="/pages/day3.html">#Day3</a></li>
+                        <li><a href="/pages/day4.html">#Day4</a></li>
+                        <li><a href="/pages/day5.html">#Day5</a></li>
+                        <li><a href="/pages/day6.html">#Day6</a></li>
+                        <li><a href="/pages/day7.html">#Day7</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main clas="main" id="main__day5">
+        <h1 class="main__titulo">DAY 5</h1>
+        <div class="main__day5__container" id="main_container">
+            <div class="main__day5__container" id="container_datos">
+                <div class="main__day5__container" id="container_textos">
+                    <p class="main__day5__subtitulo" id="lista_super">Lista de supermercado</p>
+                    <p class="main__day5__texto">Agrega alimentos para facilitar tu visita al súper!</p>
+                </div>
+                <button class="main__day__container__content__button" id="boton_agregar_alimento" onclick="agregarAlimento();">Agregar alimento</button>
+                <div class="input__y__enviar" id="input_y_enviar">
+                    <input class="main__day__input" type="text" id="input_alimento" placeholder="Escribe el alimento">
+                    <button class="main__day__container__content__button" id="enviar_alimento" onclick="enviarAlimento();">></button>
+                </div>
+                <div class="seleccion_listas" id="container_listas_y_texto">
+                    <p class="main__day5__texto">Elige la categoría:</p>
+                    <div class="seleccion_listas" id="container_listas">
+                        <button class="main__day__container__content__button boton__lista" onclick="eleccionCategoria('FyV')">Frutas y verduras🥬</button>
+                        <button class="main__day__container__content__button boton__lista" onclick="eleccionCategoria('CyP')">Carnes y pescados🥩</button>
+                        <button class="main__day__container__content__button boton__lista" onclick="eleccionCategoria('Beb')">Bebidas🥤</button>
+                        <button class="main__day__container__content__button boton__lista" onclick="eleccionCategoria('SyA')">Snacks y aperitivos🍿</button>
+                        <button class="main__day__container__content__button boton__lista" onclick="eleccionCategoria('AEn')">Alimentos enlatados🥫</button>
+                        <button class="main__day__container__content__button boton__lista" onclick="eleccionCategoria('Pan')">Panadería🍞</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main__day5__separador"></div>
+            <div class="main__day5__container" id="listas_y_reinicio">
+                    <div class="main__day5__container__categorias" id="categorias">
+                        <div class="main__day5__container" id="frutas_verduras">
+                            <p class="main__day5__subtitulo ">Frutas y verduras🥬</p>
+                            <p class="lista_alimentos" id="lista_fyv"></p>
+                        </div>
+                        <div class="main__day5__container" id="carnes_pescados">
+                            <p class="main__day5__subtitulo">Carnes y pescados🥩</p>
+                            <p class="lista_alimentos" id="lista_cyp"></p>
+                        </div>
+                        <div class="main__day5__container" id="bebidas">
+                            <p class="main__day5__subtitulo">Bebidas🥤</p>
+                            <p class="lista_alimentos" id="lista_beb"></p>
+                        </div>
+                        <div class="main__day5__container" id="snacks_aperitivos">
+                            <p class="main__day5__subtitulo">Snacks y aperitivos🍿</p>
+                            <p class="lista_alimentos" id="lista_sya"></p>
+                        </div>
+                        <div class="main__day5__container" id="alimentos_enlatados">
+                            <p class="main__day5__subtitulo">Alimentos enlatados🥫</p>
+                            <p class="lista_alimentos" id="lista_aen"></p>
+                        </div>
+                        <div class="main__day5__container" id="panaderia">
+                            <p class="main__day5__subtitulo">Panadería🍞</p>
+                            <p class="lista_alimentos" id="lista_pan"></p>
+                        </div>
+                </div>
+                <button class="main__day__container__content__button" id="boton_reinicio" onclick="reiniciarListas();">Reiniciar</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/js/app-day5.js"></script>
+</html>
