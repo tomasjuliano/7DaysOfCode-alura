@@ -8,28 +8,6 @@
     align-items: center;
 }
 
-.main__day4__container{
-    width: 80%;
-    height: 80%;
-    margin: 0rem 11.5rem 0rem 11.5rem;
-    padding: 1%;
-    gap: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 0.5rem solid yellow;
-}
-
-.main__day4__texto{
-    display: block;
-    font-size: 2rem;
-    color: white;
-    padding: 0.5rem;
-    text-align: center;
-    cursor: default;
-}
-
 #comenzar_juego{
     width: auto;
     height: auto;

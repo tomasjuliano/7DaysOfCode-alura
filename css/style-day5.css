@@ -8,19 +8,6 @@
     align-items: center;
 }
 
-.main__day5__container{
-    width: 80%;
-    height: 80%;
-    margin: 0rem 11.5rem 0rem 11.5rem;
-    padding: 1%;
-    gap: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 0.5rem solid yellow;
-}
-
 #main_container{
     min-height: 80%;
     height: auto;
@@ -51,15 +38,6 @@
     width: 100%;
 }
 
-.main__day5__subtitulo{
-    color: yellow;
-    font-family: "Montserrat", sans-serif;
-    font-size: 3.5rem;
-    text-align: center;
-    padding: 1rem;
-    cursor: default;
-}
-
 #lista_super{
     padding: 0rem;
     font-weight: 700;
@@ -67,18 +45,10 @@
 }
 
 #lista_super:hover{
-    text-shadow: yellow 0px 0px 5px;;
+    text-shadow: yellow 0px 0px 5px;
 }
 
-.main__day5__texto{
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    cursor: default;
-}
-
-.main__day5__container__categorias{
+.main__day__container__categorias{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -87,24 +57,19 @@
     gap: 1rem;
 }
 
-.main__day5__container__categorias .main__day5__container{
+.main__day__container__categorias .main__day__container{
     width: 24rem;
     height: auto;
+    flex: none;
     margin: 0rem;
     padding: 0rem;
     border: 0.2rem solid yellow;
     border-radius: 0.5rem;
 }
 
-.main__day5__container__categorias .main__day5__container .main__day5__subtitulo{
+.main__day__container__categorias .main__day__container .main__titulo{
     font-size: 2rem;
     padding: 0rem;
-}
-
-.main__day5__separador{
-    width: 100%;
-    height: auto;
-    border-bottom: 0.5rem dotted yellow;
 }
 
 #boton_agregar_alimento{

@@ -12,34 +12,8 @@
     width: 6rem;
 }
 
-.main__day3__container{
-    width: 80%;
-    height: 80%;
-    margin: 0rem 11.5rem 0rem 11.5rem;
-    padding: 1%;
-    gap: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 0.5rem solid yellow;
-}
-
-.main__day3__intro{
-    font-size: 3rem;
-    color: white;
-    padding: 0.5rem;
-    text-align: center;
-    cursor: default;
-}
-
-.main__day3__texto{
-    display: none;
-    font-size: 2rem;
-    color: white;
-    padding: 0.5rem;
-    text-align: center;
-    cursor: default;
+#texto_intro{
+    font-size: 2.5rem;
 }
 
 .main__button__continuar{

@@ -1,5 +1,5 @@
 // Obtención de los elementos
-const variables = document.querySelectorAll(".main__variable");
+const variables = document.querySelectorAll(".variable__container");
 const dropZones = document.querySelectorAll(".main__dropzone");
 const respuesta = document.getElementById("respuesta_comparacion");
 const draggableElement = document.querySelector(".draggable");

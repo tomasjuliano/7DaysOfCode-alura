@@ -8,20 +8,7 @@
     justify-content: center;
 }
 
-.main__day1__container{
-    width: 80%;
-    height: 80%;
-    margin: 0rem 11.5rem 0rem 11.5rem;
-    padding: 1%;
-    gap: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 0.5rem solid yellow;
-}
-
-.main__variables{
+.main__variables__container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -37,7 +24,7 @@
     gap: 2rem;
 }
 
-.main__variable{
+.variable__container{
     width: 100%;
     height: fit-content;
     display: flex;
@@ -53,22 +40,22 @@
     cursor: grabbing !important; /* Cursor mientras se arrastra */
   }
 
-.main__variable__nombre{
+.variable_nombre{
     color: yellow;
     font-size: 2rem;
     padding: 0.5rem;
 }
 
-.main__variable__tipo{
+.variable_tipo{
     color: white;
     font-size: 1.5rem;
     padding: 0.5rem;
 }
 
-.main__day1__separador{
-    width: 100%;
-    height: auto;
-    border-bottom: 0.5rem dotted yellow;
+.texto_signo{
+    color: yellow;
+    font-size: 4rem;
+    font-weight: bold;
 }
 
 .main__day1__comparador{
@@ -78,7 +65,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 
 .main__day1__dropzones{
@@ -102,29 +89,8 @@
 .main__dropzone:has(.dropped){
     width: fit-content;
     height: 7rem;
-    .main__variable{
+    .variable__container{
         width: auto;
         height: auto;
     }
-}
-
-.main__day1__text{
-    color: yellow;
-    font-size: 4rem;
-    font-weight: 800;
-    padding: 0.5rem;
-    cursor: default;
-}
-
-#texto_inicial{
-    color: white;
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-#respuesta_comparacion{
-    display: flex;
-    color: white;
-    font-size: 2rem;
-    font-weight: 400;
 }
