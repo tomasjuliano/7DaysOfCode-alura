@@ -1,0 +1,118 @@
+#main__day7{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    padding: 0.5rem 0rem .5rem 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_calculadora{
+    display: flex;
+    width: 20rem;
+    padding: 1%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    border: 0.2rem solid yellow;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 0, 0.1);
+}
+
+#container_nombre_calculadora{
+    display: flex;
+    justify-content: space-between;
+    gap: auto;
+    width: 100%;
+    .main__titulo{
+        font-size: 1.5rem;
+    }
+    #kassio{
+        font-weight: bold;
+        padding: 0% 0% 0% 0.2rem;
+    }
+    #modelo{
+        padding: 0% 0.2rem 0% 0%;
+    }
+}
+
+.container_display_calculadora{
+    width: auto;
+    height: auto;
+    min-height: 4rem;
+    padding: 0px 8px 0px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border: 0.2rem solid yellow;
+    border-radius: 1.2rem;
+    background-color: black;
+    color: yellow;
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    white-space: normal; /* Evita el salto de línea */
+    overflow: hidden; /* Opcional: Oculta el texto que se sale del contenedor */
+}
+
+.container_botones_calculadora{ /* TENGO QUE PORBAR HACERLO CON GRID SI O SI */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+    grid-template-rows: repeat(4, 1fr); /* 5 filas de igual tamaño */
+    width: auto;
+    height: auto;
+    max-height: 80%;
+    gap: 1rem;
+}
+
+.boton_calculadora{
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0.2rem solid yellow;
+    border-radius: 1.2rem;
+    background-color: black;
+    color: yellow;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+.boton_calculadora:hover{
+    background-color: rgba(255, 255, 0, 0.1);
+    cursor: pointer;
+}
+
+.botones_funcionales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#boton_on_off{
+    width: 50%;
+    height: auto;
+    aspect-ratio: auto;
+}
+
+#boton_clean{
+    width: 50%;
+    height: auto;
+    aspect-ratio: auto;
+}
+
+.typing{
+    font-family: monospace;
+    font-size: 24px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% {
+        color: transparent;
+    }
+}

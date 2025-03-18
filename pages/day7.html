@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#7DaysOfCode | Day 7</title>
+    <link rel="shortcut icon" href="/img/favicon-7daysofcode.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style-day7.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="/img/7daysofcode-logo.svg" alt="Logo 7 Days of code.">
+        <nav class="header__menu">
+            <ul class="header__menu__horizontal">
+                <li><a href="/index.html">HOME</a></li>
+                <li>
+                    <a href="#">DAYS</a>
+                    <ul class="header__menu__vertical">
+                        <li><a href="/pages/day1.html">#Day1</a></li>
+                        <li><a href="/pages/day2.html">#Day2</a></li>
+                        <li><a href="/pages/day3.html">#Day3</a></li>
+                        <li><a href="/pages/day4.html">#Day4</a></li>
+                        <li><a href="/pages/day5.html">#Day5</a></li>
+                        <li><a href="/pages/day6.html">#Day6</a></li>
+                        <li><a href="/pages/day7.html">#Day7</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main clas="main" id="main__day7">
+        <h1 class="main__titulo">DAY 7</h1>
+        <div class="main__day__container">
+            <div class="main__day__container" id="container_calculadora">
+                <div id="container_nombre_calculadora">
+                    <p class="main__titulo" id="kassio">KASSIO</p>
+                    <p class="main__titulo" id="modelo">fx-17TOM S</p>
+                </div>
+                <div class="container_display_calculadora" id="display"></div>
+                <div class="botones_funcionales">
+                    <button class="boton_calculadora" id="boton_on_off" onclick="changeStatus();">I/O</button>
+                    <button class="boton_calculadora" id="boton_clean" onclick="clearDisplay();">Clean</button>
+                </div>
+                <div class="container_botones_calculadora">
+                    <button class="boton_calculadora" onclick="pulsarBoton('7');">7</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('8');">8</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('9');">9</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('*');">*</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('6');">6</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('5');">5</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('4');">4</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('÷');">÷</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('1');">1</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('2');">2</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('3');">3</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('-');">-</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('0');">0</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('.');">.</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('=');">=</button>
+                    <button class="boton_calculadora" onclick="pulsarBoton('+');">+</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/js/app-day7.js"></script>
+</html>
