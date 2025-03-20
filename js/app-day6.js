@@ -12,7 +12,7 @@ function modificarLista(accion){
 }
 
 function agregarInvitado(nombre) {
-    if (nombre === "") {
+    if (nombre === "" || nombre === null) {
         alert("El nombre no puede estar vacío.");
         return;
     }
